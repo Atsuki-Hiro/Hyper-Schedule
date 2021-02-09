@@ -1,0 +1,410 @@
+/* common ------------------------------------------------------------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+p:not([class=top-text]) {
+  color: white;
+}
+
+p, span {
+  line-height: 2em;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.bg-green1 {
+  background: linear-gradient(to top right, #698E48, #182415);
+}
+
+.bg-green2 {
+  background: linear-gradient(to top left, #182415, #698E48);
+}
+
+.gradation{
+  background: linear-gradient(to top left, #D1D2CB, #D0AD77);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradation-black{
+  background: linear-gradient(to top left, #D1D2CB, #000);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.alignright {
+  text-align: right;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.alignright .gradation {
+  background: linear-gradient(to top left, #D0AD77, #D1D2CB);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.top-wrapper, .service1-wrapper, .service2-wrapper, .service3-wrapper, .benefits-wrapper, .case-wrapper, .hyper-world{
+  padding-top: 150px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+/* header ------------------------------------------------------------------ */
+.header {
+  display: flex;
+  position: relative;
+  margin: 20px 0 0 20px;
+}
+
+.logo {
+  width: auto;
+  height: 75px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: 20px;
+}
+
+.global-nav {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+.nav {
+  display: flex;
+  margin: auto 25px auto auto;
+}
+
+.nav-item {
+  padding: 20px 5px;
+  margin: 5px;
+}
+
+.nav-item a {
+  padding: 20px 0;
+}
+
+/* .nav li:last-child {
+background-color: #000;
+margin-left: 30px;
+border-radius: 40px;
+padding: 20px 60px;
+}
+
+.nav li:last-child a {
+color: #fff;
+letter-spacing: .3em;
+} */
+
+/* top-wrapper -------------------------------------------- */
+
+.top-wrapper>.container{
+  display: flex;
+  margin-top: 100px;
+}
+
+.container>.top-left{
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.top-left>img {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.container>.top-right{
+  width: auto;
+  margin: auto;
+  margin-left: 0;
+}
+
+.container>.top-right>.top-copy{
+  font-size: 65px;
+  font-weight: 900;
+  background: linear-gradient(to top left, #698E48, #182415);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0!important;
+}
+
+.top-right span {
+  font-size: 46px;
+}
+
+.top-right .top-text{
+  font-size: 17px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* service --------------------------------- */
+h2 {
+  letter-spacing: .2em;
+  font-size: 65px;
+}
+
+.gradation span{
+  font-size: 17px;
+}
+
+.service1-wrapper h3{
+  padding-bottom: 25px;
+}
+
+.service1-wrapper img{
+  margin-top: 20px;
+}
+
+h3 {
+  padding-top: 25px;
+  color: white;
+  font-size: 35px!important;
+  font-weight: bold;
+}
+
+.things {
+  margin-top: 50px;
+}
+
+.merit {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+}
+
+.merit2 {
+  margin-top: 100px;
+}
+
+.merit3 {
+  margin-top: 200px;
+}
+
+.merit4 {
+  margin-top: 300px;
+}
+
+.paragraph{
+  padding-top: 30px;
+  line-height: 2.5em;
+}
+
+/* .hyper-world 5 {
+position: relative;
+} */
+
+/* .hyper-world::before{
+  position: absolute;
+  content: '';
+  display: block;
+  background-image: url('../img/hello.png');
+  background-size: cover;
+  width: 90%;
+  height: auto;
+  z-index: 100;
+  top: 10px;
+  left: 10px;
+} */
+
+/* fotter ----------------------- */
+
+footer img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.hyper-world {
+  padding-bottom: 50px;
+}
+
+.hyper-world .container {
+  padding: 250px 0;
+  background: url(../img/hello.png) no-repeat;
+  background-size: contain;
+  z-index: 0;
+  margin: 0 auto;
+  top: 70%;
+  width: max-content;
+}
+
+.sp {
+  display: none;
+}
+
+/* responsive */
+
+@media(max-width: 1280px) {
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  .container {
+    margin: 0 50px;
+  }
+  .top-wrapper .container {
+    display: block;
+  }
+  .hyper-world > .container {
+    margin: 0 auto!important;
+  }
+  .top-left img {
+    width: 100%;
+  }
+
+  .global-nav {
+    height: 450px;
+    position: fixed;
+    right: -200px;
+    z-index: 100;
+    margin-top: 33px;
+    transition: transform 250ms ease-in-out;
+  }
+  .nav {
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+  }
+  .nav li{
+    color: #000;
+    list-style: none;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    text-align: left;
+    margin: 0;
+    width: 160px;
+  }
+  .nav li:last-child {
+    color: #000;
+  }
+  .nav li a{
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  input[type="checkbox"]:checked ~ .global-nav {
+    right: 0;
+    transition: .3s;
+  }
+
+  input[type=checkbox] {
+    transition: all 0.3s;
+  }
+
+  .sidebarIconToggle {
+    transition: all 0.3s;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    top: 30px;
+    right: 45px;
+    height: 22px;
+    width: 22px;
+    color: #000;
+  }
+  .spinner {
+    transition: all 0.3s;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+  }
+  .horizontal {
+    transition: all 0.3s;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+  .diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    float: left;
+  }
+  .diagonal.part-2 {
+    transition: all 0.3s;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    opacity: 0;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    transform: rotate(135deg);
+    margin-top: 8px;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+  }
+}
+
+@media(max-width: 768px) {
+  .sp {
+    display: block;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .top-copy {
+    font-size: 30px!important;
+  }
+  .top-copy span {
+    font-size: 20px;
+  }
+  .hyper-world > .container {
+    padding: 70px 0;
+  }
+}
+
+@media(max-width: 425px) {
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 15px!important;
+  }
+}

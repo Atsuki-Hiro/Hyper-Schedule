@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/favicon.icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HYPER SCHEDULE</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">
+      <a href="/"><img src="img/logo.png" class="logo" alt="HYPER SCHEDULEのロゴ"></a>
+    </h1>
+
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+
+    <div class="global-nav">
+      <ul class="nav">
+        <li class="nav-item"><a href="#service">サービス概要</a></li>
+        <li class="nav-item"><a href="#use">利用方法</a></li>
+        <li class="nav-item"><a href="#merit">メリット</a></li>
+        <li class="nav-item"><a href="#case">活用事例</a></li>
+        <li class="nav-item"><a href="#contact">お問い合わせ</a></li>
+        <!-- <li class="nav-item"><a href="#application">お申し込み</a></li> -->
+      </ul>
+    </div>
+
+  </header>
+
+  <section class="top-wrapper">
+    <div class="container">
+      <div class="top-left">
+        <img src="img/iphone.png" alt="iphone.png">
+      </div>
+      <div class="top-right">
+        <h2 class="top-copy">組織の予定管理は<br><span>HYPER SCHEDULEで</span></h2>
+        <p class="top-text">〜100人の中小組織での予定管理をスマホで、簡単に。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="service1-wrapper bg-green1 aligncenter" id="service">
+    <div class="container">
+      <div class="text">
+        <h2 class="gradation">for BEAUTY<br>MANAGEMENT</h2>
+        <h3>美しい予定管理へ</h3>
+        <p>HYPER SCHEDULEは、複雑な組織のスケジュール管理を簡潔にする予定管理アプリです。<br>管理コストを削減し、意思決定スピードに貢献します。</p>
+      </div>
+      <img src="img/beauty.png" alt="beauty.png">
+    </div>
+  </section>
+
+  <!-- 左 -->
+  <section class="service2-wrapper bg-green2">
+    <div class="container">
+      <div class="text">
+        <h2 class="gradation">3THINGS<br><span>HYPER SCHEDULE CAN DO FOR YOU</span></h2>
+        <h3>HYPER SCHEDULEが実現する3つのこと</h3>
+      </div>
+      <div class="things">
+        <img src="img/3things.png" alt="3things.png">
+      </div>
+    </div>
+  </section>
+
+  <!-- 右 -->
+  <section class="service3-wrapper bg-green1 alignright" id="use">
+    <div class="container">
+      <div class="text">
+        <h2 class="gradation">SUGGEST YOU<br><span>TO DO THESE THINGS</span></h2>
+        <h3>HYPER SCHEDULEはこんなこともできます</h3>
+      </div>
+      <div class="things">
+        <img src="img/suggest.png" alt="suggest.png">
+      </div>
+    </div>
+  </section>
+
+  <!-- 右 -->
+  <section class="benefits-wrapper bg-green2 alignright" id="merit">
+    <div class="container">
+      <div class="text">
+        <h2 class="gradation">MERIT <br><span>OF INTRODUCTION</span></h2>
+        <h3>導入の効果</h3>
+      </div>
+      <ul class="merit">
+        <li class="merit1"><img src="img/merit1.png" alt="merit1.png"></li>
+        <li class="merit2"><img src="img/merit2.png" alt="merit2.png"></li>
+        <li class="merit3"><img src="img/merit3.png" alt="merit3.png"></li>
+        <li class="merit4"><img src="img/merit4.png" alt="merit.png4"></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 左 -->
+  <section class="case-wrapper bg-green1" id="case">
+    <div class="container">
+      <div class="text">
+        <h2 class="gradation">APPLICATION<br>EXAMPLES</h2>
+        <h3>活用事例</h3>
+        <p class="paragraph">HYPER SCHEDULEを導入すると、今まで当たり前に行ってきた時間のかかる<br>タスク管理業務を簡略化し、コストを削減することができます。<br>初期費用や月額固定利用かからないので、安心してご利用いただけます。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hyper-world bg-green2 aligncenter">
+    <div class="container">
+      <h2 class="gradation-black">HELLO<br>HYPER WORLD</h2>
+      <h3>新しい”意思疎通社会”へ。</h3>
+      <p class="paragraph">Hyper Communicationsは、<br class="sp">自由で新しいテクノロジーの実装によって<br>世界の取引をリードしていきます。</p>
+    </div>
+  </section>
+
+  <footer>
+    <img src="img/logo.png" alt="HYPER SCHEDULEのロゴ">
+  </footer>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script>
+$('.nav a').click(function() {
+  var id = $(this).attr('href');
+  var position = $(id).offset().top;
+  $('html, body').animate({
+    'scrollTop': position
+  }, 500);
+  return false;
+});
+
+var homeBtn = $('.title a');
+homeBtn.click(function() {
+  $('body, html').animate({
+    scrollTop: 0
+  }, 500);
+  return false;
+});
+</script>
+</body>
+</html>
