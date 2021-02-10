@@ -390,6 +390,12 @@ footer img {
     height: 40!important;
     width: auto;
   }
+  .top-left img {
+    margin-bottom: 40px;
+  }
+  .top-wrapper {
+    padding-top: 20px;
+  }
   .sp {
     display: block;
   }
